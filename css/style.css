@@ -1,0 +1,344 @@
+/* Typography */
+h2, h3, p {
+  margin-bottom: 1.5rem;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.titre {
+  font-weight: 700;
+  font-size: 250%;
+  text-transform: uppercase;
+}
+.titre--cursive {
+  font-family: "Satisfy", cursive;
+  text-transform: none;
+  margin-bottom: 0;
+}
+@media (max-width: 767.98px) {
+  .titre {
+    font-size: 200%;
+  }
+}
+.titre--primary {
+  color: #AD1504;
+  text-align: center;
+}
+
+.date {
+  line-height: 50px;
+}
+@media (max-width: 767.98px) {
+  .date {
+    line-height: 40px;
+  }
+}
+
+.sous-titre {
+  font-family: "Satisfy", cursive;
+  color: #AD1504;
+  font-weight: 700;
+}
+.sous-titre:before, .sous-titre:after {
+  content: " ~ ";
+}
+
+.liens {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/* Navigation */
+.bg-black {
+  background-color: #000;
+}
+
+.navbar-brand__logo {
+  width: 80%;
+}
+
+/* Parallax */
+.parallax {
+  height: 550px;
+  background: #000 url("../images/banniereSushi.jpg") no-repeat fixed center;
+  background-position-y: 0;
+  background-position-x: 50%;
+  background-size: 2300px;
+}
+
+/* Spacing */
+.bienvenue {
+  margin-top: 6rem;
+}
+@media (max-width: 991.98px) {
+  .bienvenue {
+    margin-top: 0;
+  }
+  .bienvenue .col-lg-6:first-child {
+    margin-bottom: 6rem;
+  }
+}
+
+.gallery-image--left {
+  padding-bottom: 1.5rem;
+}
+
+.gallery-image--right:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.quality {
+  margin-top: 6rem;
+}
+@media (max-width: 991.98px) {
+  .quality .col-lg-6:last-child {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.speciality, .evenements {
+  margin-top: 6rem;
+}
+
+/* Rendre les images fluide */
+.gallery-image--left, .gallery-image--right {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Option */
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.evenements .col-lg-4 {
+  margin-bottom: 1.5rem;
+}
+
+.option {
+  text-align: center;
+}
+.option .icon {
+  font-size: 350%;
+  color: #AD1504;
+}
+.option h3 {
+  font-size: 150%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.image-qualite, .image-histoire {
+  height: 625px;
+}
+
+.image-qualite {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/960x625-2.png");
+}
+
+.image-histoire {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/960x625.png");
+}
+
+@media (min-width: 768px) {
+  .left {
+    height: 625px;
+  }
+}
+
+.option {
+  padding-bottom: 3rem;
+}
+.option p {
+  margin-bottom: 0;
+}
+
+.desserts {
+  padding-top: 1.5rem;
+}
+
+.menu {
+  margin-top: 3rem;
+}
+@media (max-width: 991.98px) {
+  .menu h4 {
+    height: 19px !important;
+    font-size: 120%;
+  }
+  .menu .prix {
+    font-size: 130%;
+    margin-top: -1.8rem;
+  }
+  .menu .text-muted {
+    font-size: 80%;
+  }
+}
+.menu h3 {
+  font-family: "Satisfy", cursive;
+  font-size: 200%;
+}
+.menu i {
+  color: #AD1504;
+  font-size: 200%;
+  margin-top: -3.7rem;
+  float: right;
+}
+.menu ul {
+  padding-left: 0;
+  padding-top: 1.5rem;
+  list-style: none;
+}
+.menu h4 {
+  height: 22px;
+  border-bottom: 1px dotted black;
+}
+.menu li {
+  margin-bottom: 3rem;
+}
+
+.prix {
+  text-align: right;
+  font-size: 160%;
+  margin-top: -2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.white {
+  padding: 1px;
+  background-color: #fff;
+}
+
+/* Section */
+@media (max-width: 991.98px) {
+  .hero {
+    display: none;
+  }
+}
+
+.quality, .histoire {
+  background-color: #f1f1f1;
+}
+
+hr {
+  margin-top: 0.5rem;
+  border: none;
+  text-align: center;
+  background-image: url("../images/border.png");
+  height: 7px;
+  width: 143px;
+  margin-bottom: 3rem;
+}
+
+.text-muted-dark {
+  color: #b5b5b5 !important;
+}
+
+.button-input {
+  border-radius: 100px;
+  border: 1px solid #b5b5b5;
+}
+
+.input-radius {
+  border-radius: 100px;
+  border: 1px solid #b5b5b5;
+  background-color: transparent;
+  color: #b5b5b5;
+}
+
+.input-radius:focus {
+  background-color: #000;
+  color: #b5b5b5;
+  border-color: #b5b5b5;
+  box-shadow: none;
+}
+
+.text-super-muted {
+  color: #707070;
+  font-size: 120%;
+}
+
+.tag {
+  background-color: #AD1504;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  top: 10px;
+  right: 10px;
+  outline: 1px solid #b5b5b5;
+  outline-offset: -5px;
+  z-index: 9999;
+}
+.tag__date {
+  font-size: 200%;
+  line-height: 18px;
+}
+.tag__mois {
+  line-height: 2rem;
+  font-size: 80%;
+}
+
+.card__image {
+  background-image: url("https://via.placeholder.com/870x658");
+  width: 100%;
+}
+
+.f80 {
+  font-size: 80%;
+}
+
+.w80 {
+  width: 80%;
+}
+a.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+}
+.zoom {
+  overflow: hidden; /* Removing this will break the effects */
+}
+
+.zoom--evenement:hover img {
+  transition: all 250ms ease-in-out;
+  filter: brightness(110%);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.social-hover:hover img {
+  transition: all 250ms ease-in-out;
+  filter: brightness(0.5);
+}
+
+.social-hover:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  font-size: 80%;
+}
+
+.overlay img:hover {
+  opacity: 1;
+}
